@@ -16,6 +16,70 @@ body {
   background-size: cover;
 }
 
+
+.logo img {
+  width: 230px; /* 好きなサイズに */
+  height: auto; /* アスペクト比維持 */
+}
+.greeting-section {
+  background: linear-gradient(135deg, #e0f7fa, #f0ffff); 
+  /* 淡いグラデーション背景。2色変えれば色味を自由に */
+  padding: 60px 20px; 
+  /* 縦横に十分な余白を */
+}
+
+
+
+.tab-icon {
+  display: none; 
+}
+.tab-icon-wrapper:hover .tab-icon {
+  display: inline; 
+}
+.tab-icon {
+  width: 40px;      /* お好みで */
+  height: auto;
+  margin-left: 50px; /* テキストとアイコンの隙間 */
+}
+
+.greeting-inner {
+  max-width: 900px; 
+  margin: 0 auto; 
+  display: flex; 
+  align-items: center; 
+  gap: 40px; 
+  /* カラム間の余白 */
+  background: #ffffffaa; 
+  /* 半透明の白で、背景とカードを重ねる感じ */
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+  padding: 40px;
+}
+
+.greeting-img img {
+  width: 300px; 
+  height: auto; 
+  border-radius: 12px; 
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.greeting-text {
+  flex: 1; 
+  text-align: left;
+}
+
+.greeting-text h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1em;
+  color: #006064; 
+  /* タイトルカラー */
+}
+
+.greeting-text p {
+  line-height: 1.8;
+  color: #333;
+}
+
 /* header */
 header {
   background-color: #00ACC1;
@@ -24,6 +88,8 @@ header {
   text-align: center;
   font-size: 24px;
 }
+
+
 
 /* nav */
 nav {
@@ -41,6 +107,11 @@ nav a {
 nav a:hover {
   color: #004D40;
 }
+
+.nav li {
+  position: relative; /* 子要素を絶対配置させるため */
+}
+
 
 /* section 共通 */
 section {
